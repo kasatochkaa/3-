@@ -9,15 +9,17 @@ private:
 
 public:
 	Point() {}
-	Point(double v1, double v2) : x(v1), y(v2) {}
+	Point(
+		const double v1,
+		const double v2) : x(v1), y(v2) {}
 	Point(const Point &copy) : x(copy.x), y(copy.y) {}
 
 	double getY();
-	void setY(double val);
+	void setY(const double val);
 	double getX();
-	void setX(double val);
+	void setX(const double val);
 
-	double to(Point *p);
+	double to(const Point *p);
 	void print();
 
 	Point& operator= (const Point &obj);
