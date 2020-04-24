@@ -3,7 +3,7 @@
 
 #include "Point.h"
 
-double Point::getY() {
+double Point::getY() const {
 	return this->y;
 }
 
@@ -11,7 +11,7 @@ void Point::setY(const double val) {
 	this->y = val;
 }
 
-double Point::getX() {
+double Point::getX() const {
 	return this->x;
 }
 
@@ -28,7 +28,7 @@ double Point::to(const Point *p) {
 	return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
 }
 
-void Point::print() {
+void Point::print() const{
 	std::cout << "Point" << std::endl;
 	std::cout << "X: " << this->x << std::endl;
 	std::cout << "Y: " << this->y << std::endl;
