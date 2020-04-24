@@ -14,13 +14,15 @@ private:
 
 public:
 	Circle() {}
-	Circle(Point c, double r) : center(c), radius(r) {}
+	Circle(
+		const Point c,
+		const double r) : center(c), radius(r) {}
 	Circle(const Circle &copy) : center(copy.center), radius(copy.radius) {}
 
 	double getRadius();
-	void setRadius(double val);
+	void setRadius(const double val);
 	Point getCenter();
-	void setCenter(Point val);
+	void setCenter(const Point val);
 
 	void print();
 
