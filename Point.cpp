@@ -7,7 +7,7 @@ double Point::getY() {
 	return this->y;
 }
 
-void Point::setY(double val) {
+void Point::setY( const double val) {
 	this->y = val;
 }
 
@@ -15,15 +15,15 @@ double Point::getX() {
 	return this->x;
 }
 
-void Point::setX(double val) {
+void Point::setX( const double val) {
 	this->x = val;
 }
 
-double Point::to(Point *p) {
-	double x1 = this->x;
-	double y1 = this->y;
-	double x2 = p->x;
-	double y2 = p->x;
+double Point::to( const Point *p) {
+	const double x1 = this->x;
+	const double y1 = this->y;
+	const double x2 = p->x;
+	const double y2 = p->x;
 
 	return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
 }
