@@ -33,7 +33,7 @@ Point Rectangle::getTopLeft() {
 	return topLeft;
 }
 
-void Rectangle::setTopLeft(Point p) {
+void Rectangle::setTopLeft(const Point p) {
 	topLeft = p;
 }
 
@@ -42,7 +42,7 @@ Point Rectangle::getBottomRight() {
 	return bottomRight;
 }
 
-void Rectangle::setBottomRight(Point p) {
+void Rectangle::setBottomRight(const Point p) {
 	bottomRight = p;
 }
 
