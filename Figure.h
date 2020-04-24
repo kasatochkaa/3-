@@ -3,8 +3,8 @@
 class Figure {
 
 public:
-	virtual double getPerimeter() = 0;
-	virtual double getArea() = 0;
+	virtual double getPerimeter() = 0 const;
+	virtual double getArea() = 0 const;
 
 };
 
