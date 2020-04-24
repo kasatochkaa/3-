@@ -2,17 +2,17 @@
 
 #include "Circle.h"
 
-double Circle::getPerimeter() {
+double Circle::getPerimeter() const {
 
 	return 2 * PI * radius;
 }
 
-double Circle::getArea() {
+double Circle::getArea() const  {
 
 	return PI * radius * radius;
 }
 
-void Circle::print() {
+void Circle::print() const {
 
 	std::cout << "Circle" << std::endl;
 	std::cout << "Center: (" << center.getX() << ", " << center.getY() << ")" << std::endl;
@@ -21,7 +21,7 @@ void Circle::print() {
 	std::cout << "Perimeter: " << getPerimeter() << std::endl;
 }
 
-double Circle::getRadius() {
+double Circle::getRadius() const{
 
 	return radius;
 }
@@ -31,7 +31,7 @@ void Circle::setRadius( const double val) {
 	radius = val;
 }
 
-Point Circle::getCenter() {
+Point Circle::getCenter() const {
 
 	return center;
 }
