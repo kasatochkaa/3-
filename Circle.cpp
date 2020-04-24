@@ -26,7 +26,7 @@ double Circle::getRadius() {
 	return radius;
 }
 
-void Circle::setRadius(double val) {
+void Circle::setRadius( const double val) {
 
 	radius = val;
 }
@@ -36,7 +36,7 @@ Point Circle::getCenter() {
 	return center;
 }
 
-void Circle::setCenter(Point val) {
+void Circle::setCenter(const Point val) {
 
 	center = val;
 }
