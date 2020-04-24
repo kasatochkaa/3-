@@ -12,8 +12,8 @@ double Triangle::getPerimeter() {
 
 double Triangle::getArea() {
 	/**
-	* Ïëîùàäü òðåóãîëüíèêà ïî êîîðäèíàòàì
-	* íàõîäèì ÷åðåç îïðåäåëèòåëü 2-ãî ïîðÿäêà:
+	* ÃÃ«Ã®Ã¹Ã Ã¤Ã¼ Ã²Ã°Ã¥Ã³Ã£Ã®Ã«Ã¼Ã­Ã¨ÃªÃ  Ã¯Ã® ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã Ã¬
+	* Ã­Ã ÃµÃ®Ã¤Ã¨Ã¬ Ã·Ã¥Ã°Ã¥Ã§ Ã®Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã¨Ã²Ã¥Ã«Ã¼ 2-Ã£Ã® Ã¯Ã®Ã°Ã¿Ã¤ÃªÃ :
 	*
 	*      |       | x1 - x3, y1 - y3 | |
 	* S =  | 0.5 * |                  | | = | 0.5 * ((x1-x3)(y2-y3) - (y1-y3)(x2-x3)) |
@@ -43,7 +43,7 @@ Point Triangle::getP1() {
 	return this->p1;
 }
 
-void Triangle::setP1(Point p) {
+void Triangle::setP1( const Point p) {
 	this->p1 = p;
 }
 
@@ -51,7 +51,7 @@ Point Triangle::getP2() {
 	return this->p2;
 }
 
-void Triangle::setP2(Point p) {
+void Triangle::setP2(const Point p) {
 	this->p2 = p;
 }
 
@@ -59,7 +59,7 @@ Point Triangle::getP3() {
 	return this->p3;
 }
 
-void Triangle::setP3(Point p) {
+void Triangle::setP3(const Point p) {
 	this->p3 = p;
 }
 
