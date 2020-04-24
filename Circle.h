@@ -19,15 +19,15 @@ public:
 		const double r) : center(c), radius(r) {}
 	Circle(const Circle &copy) : center(copy.center), radius(copy.radius) {}
 
-	double getRadius();
+	double getRadius() const;
 	void setRadius(const double val);
-	Point getCenter();
+	Point getCenter() const;
 	void setCenter(const Point val);
 
-	void print();
+	void print() const;
 
-	double getPerimeter() override;
-	double getArea() override;
+	double getPerimeter() override const;
+	double getArea() override const;
 
 	Circle& operator= (const Circle &obj);
 
