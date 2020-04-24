@@ -13,17 +13,20 @@ private:
 
 public:
 	Triangle() {};
-	Triangle(Point val1, Point val2, Point val3) : p1(val1), p2(val2), p3(val3) {}
+	Triangle(
+		const Point val1,
+		const Point val2,
+		const Point val3) : p1(val1), p2(val2), p3(val3) {}
 	Triangle(const Triangle &copy) : p1(copy.p1), p2(copy.p2), p3(copy.p3) {}
 
 	Point getP1();
-	void setP1(Point p);
+	void setP1(const Point p);
 
 	Point getP2();
-	void setP2(Point p);
+	void setP2(const Point p);
 
 	Point getP3();
-	void setP3(Point p);
+	void setP3(const Point p);
 
 	void print();
 
