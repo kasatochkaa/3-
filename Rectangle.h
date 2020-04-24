@@ -17,19 +17,19 @@ public:
 		const Point p2) : topLeft(p1), bottomRight(p2) {}
 	Rectangle(const Rectangle &copy) : topLeft(copy.topLeft), bottomRight(copy.bottomRight) {}
 
-	Point getTopLeft();
+	Point getTopLeft() const;
 	void setTopLeft(const Point p);
 
-	Point getBottomRight();
+	Point getBottomRight() const;
 	void setBottomRight(const Point p);
 
-	void print();
+	void print() const;
 
-	double getPerimeter() override;
-	double getArea() override;
+	double getPerimeter() override const;
+	double getArea() override const;
 
-	double getWidth();
-	double getHeight();
+	double getWidth() const;
+	double getHeight() const;
 
 	Rectangle& operator= (const Rectangle &obj);
 
