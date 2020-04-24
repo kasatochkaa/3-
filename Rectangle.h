@@ -12,14 +12,16 @@ private:
 
 public:
 	Rectangle() {};
-	Rectangle(Point p1, Point p2) : topLeft(p1), bottomRight(p2) {}
+	Rectangle(
+		const Point p1,
+		const Point p2) : topLeft(p1), bottomRight(p2) {}
 	Rectangle(const Rectangle &copy) : topLeft(copy.topLeft), bottomRight(copy.bottomRight) {}
 
 	Point getTopLeft();
-	void setTopLeft(Point p);
+	void setTopLeft(const Point p);
 
 	Point getBottomRight();
-	void setBottomRight(Point p);
+	void setBottomRight(const Point p);
 
 	void print();
 
