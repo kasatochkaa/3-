@@ -14,13 +14,13 @@ public:
 		const double v2) : x(v1), y(v2) {}
 	Point(const Point &copy) : x(copy.x), y(copy.y) {}
 
-	double getY();
+	double getY() const;
 	void setY(const double val);
-	double getX();
+	double getX() const;
 	void setX(const double val);
 
 	double to(const Point *p);
-	void print();
+	void print() const;
 
 	Point& operator= (const Point &obj);
 
