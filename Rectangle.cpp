@@ -3,25 +3,25 @@
 
 #include "Rectangle.h"
 
-double Rectangle::getWidth() {
+double Rectangle::getWidth() const {
 	return abs(topLeft.getX() - bottomRight.getX());
 }
 
-double Rectangle::getHeight() {
+double Rectangle::getHeight() const {
 	return abs(topLeft.getY() - bottomRight.getY());
 }
 
-double Rectangle::getPerimeter() {
+double Rectangle::getPerimeter() const {
 
 	return (getWidth() + getHeight()) * 2;
 }
 
-double Rectangle::getArea() {
+double Rectangle::getArea() const {
 
 	return getWidth() * getHeight();
 }
 
-void Rectangle::print() {
+void Rectangle::print() const {
 	std::cout << "Rectangle" << std::endl;
 	std::cout << "Top left point: (" << topLeft.getX() << ", " << topLeft.getY() << ")" << std::endl;
 	std::cout << "Bottom right point: (" << bottomRight.getX() << ", " << bottomRight.getY() << ")" << std::endl;
@@ -29,7 +29,7 @@ void Rectangle::print() {
 	std::cout << "Area: " << getArea() << std::endl;
 }
 
-Point Rectangle::getTopLeft() {
+Point Rectangle::getTopLeft() const {
 	return topLeft;
 }
 
@@ -38,7 +38,7 @@ void Rectangle::setTopLeft(const Point p) {
 }
 
 
-Point Rectangle::getBottomRight() {
+Point Rectangle::getBottomRight() const {
 	return bottomRight;
 }
 
